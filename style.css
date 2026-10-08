@@ -1,0 +1,328 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+color:#181818;
+background:white;
+}
+
+a{
+text-decoration:none;
+color:#181818;
+}
+
+header{
+border-bottom:1px solid #ddd;
+}
+
+.nav{
+width:90%;
+max-width:1100px;
+margin:auto;
+height:65px;
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#14a800;
+}
+
+nav{
+display:flex;
+gap:22px;
+flex:1;
+}
+
+nav a{
+font-size:13px;
+}
+
+.login{
+display:flex;
+align-items:center;
+gap:20px;
+font-size:13px;
+}
+
+.signup{
+background:#14a800;
+color:white;
+padding:10px 18px;
+border-radius:20px;
+}
+
+#menu,label,.mobile{
+display:none;
+}
+
+.promo{
+width:90%;
+max-width:1100px;
+margin:20px auto;
+padding:13px 18px;
+background:#e1f8d5;
+border-radius:12px;
+font-size:13px;
+display:flex;
+justify-content:space-between;
+}
+
+.promo a{
+text-decoration:underline;
+}
+
+.hero{
+width:90%;
+max-width:1100px;
+height:390px;
+margin:20px auto;
+padding:55px 40px;
+border-radius:18px;
+background:#f1f5ef;
+}
+
+.hero h1{
+font-size:50px;
+max-width:550px;
+line-height:1;
+}
+
+.hero p{
+font-size:15px;
+max-width:500px;
+line-height:1.5;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+background:#14a800;
+color:white;
+padding:11px 20px;
+border-radius:20px;
+font-size:13px;
+margin-right:7px;
+}
+
+section{
+width:90%;
+max-width:1100px;
+margin:45px auto;
+}
+
+.trusted{
+text-align:center;
+font-size:10px;
+color:#888;
+}
+
+.brands{
+display:flex;
+justify-content:space-around;
+margin-top:20px;
+color:#555;
+font-size:13px;
+}
+
+.categories h2,
+.how h2,
+.plans h2{
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:12px;
+}
+
+.grid div{
+height:105px;
+border:1px solid #ddd;
+border-radius:8px;
+padding:18px;
+}
+
+.grid i{
+font-size:22px;
+color:#14a800;
+}
+
+.grid span{
+display:block;
+font-size:12px;
+margin-top:15px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.cards div{
+height:250px;
+padding:25px;
+border-radius:15px;
+background:#d9f99d;
+display:flex;
+flex-direction:column;
+justify-content:end;
+}
+
+.cards div+div{
+background:#26352a;
+color:white;
+}
+
+.cards p{
+font-size:12px;
+margin-top:8px;
+}
+
+.price{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:30px;
+background:#191919;
+color:white;
+border-radius:18px;
+}
+
+.price h2{
+font-size:28px;
+}
+
+.price p{
+font-size:13px;
+margin:15px 0;
+}
+
+input{
+width:100%;
+padding:12px;
+border:0;
+border-radius:20px;
+}
+
+.chart{
+padding:50px;
+background:#30351d;
+border-radius:12px;
+text-align:center;
+}
+
+.plans{
+text-align:center;
+}
+
+.plans-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+text-align:left;
+}
+
+.plans-grid div{
+border:1px solid #ddd;
+border-radius:10px;
+padding:25px;
+}
+
+.plans-grid p,
+.plans-grid li{
+font-size:12px;
+color:#777;
+margin:10px 0;
+}
+
+.plans-grid ul{
+padding-left:18px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:white;
+border:1px solid #14a800;
+color:#14a800;
+border-radius:5px;
+}
+
+footer{
+background:#18100e;
+color:white;
+padding:25px;
+text-align:center;
+font-size:11px;
+}
+
+@media(max-width:800px){
+
+.nav{
+width:90%;
+}
+
+nav,
+.login{
+display:none;
+}
+
+label{
+display:block;
+margin-left:auto;
+font-size:22px;
+}
+
+.mobile{
+padding:20px;
+flex-direction:column;
+gap:15px;
+}
+
+#menu:checked + label + nav + .login{
+display:none;
+}
+
+.promo{
+width:90%;
+font-size:11px;
+}
+
+.hero{
+height:350px;
+padding:35px 25px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.brands{
+flex-wrap:wrap;
+gap:20px;
+}
+
+.grid{
+grid-template-columns:1fr 1fr;
+}
+
+.cards,
+.price,
+.plans-grid{
+grid-template-columns:1fr;
+}
+
+section{
+width:90%;
+}
+}
